@@ -1,11 +1,11 @@
 #!/bin/bash
 
 ### Describe Your Target Android Api or Architectures ###
-ANDROID_API_LEVEL="25"
-ARCH_LIST=("armv8a" "armv7a" "x86" "x86-64")
+ANDROID_API_LEVEL="31"
+ARCH_LIST=("armv8a" "x86-64")
 
 
-### Supported Architectures "armv8a" "armv7a" "x86" "x86-64"  ####### 
+### Supported Architectures "armv8a" "x86-64"  ####### 
 
 ### Enable FFMPEG BUILD MODULES ####
 ENABLED_CONFIG="\
