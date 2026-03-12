@@ -16,25 +16,25 @@ ENABLED_CONFIG="\
 		--enable-swresample \
 		--enable-libdav1d \
 		--enable-muxer=wav,mp4,matroska,webm,mp3,adts,flac,ogg,opus,mpegts,hls,dash,segment \
+		--enable-protocol=file \
     	--enable-demuxer=* \
 	 	--enable-encoder=mjpeg,utvideo \
 		--enable-decoder=h264,hevc,vp8,vp9,libdav1d,flv,vp6f,adpcm_swf,mpeg4,wmv3,mpeg1video,mpeg2video,mpeg2audio,msmpeg4v2,msmpeg4v3,theora,amrnb,amrwb,dvvideo,h263,mjpeg,png,jpeg,bmp,webp,mp3,aac,ac3,eac3,flac,opus,vorbis,pcm_s16le,pcm_s24le,alac,wma,ass,ssa,mov_text,subrip,webvtt,dvbsub,dvdsub,pgssub,utvideo \
 		--enable-parser=* \
   		--enable-bsf=* \
+		--enable-zlib \
 		--enable-static "
 
 
 ### Disable FFMPEG BUILD MODULES ####
 DISABLED_CONFIG="\
 		--disable-small \
-		--disable-zlib \
  		--disable-avfilter \
 		--disable-v4l2-m2m \
 		--disable-cuda-llvm \
 		--disable-indevs \
 		--disable-libxml2 \
 		--disable-avdevice \
-		--disable-network \
 		--disable-shared \
 		--disable-debug \
 		--disable-ffplay \
@@ -42,19 +42,10 @@ DISABLED_CONFIG="\
 		--disable-doc \
 		--disable-symver \
 		--disable-gpl "
+		
+#--disable-zlib \
+#--disable-network \
 
-
-
-
-
-
-
-
-
-############ Dont Change ################
-############ Dont Change ################
-############ Dont Change ################
-############ Dont Change ################
 ############ Dont Change ################
 
 SYSROOT="$ANDROID_NDK_PATH/toolchains/llvm/prebuilt/linux-x86_64/sysroot"
